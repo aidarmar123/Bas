@@ -1,4 +1,6 @@
-﻿using System;
+﻿using comn.Models;
+using comn.Script;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -14,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace comn
+namespace comn.Script
 {
     /// <summary>
     /// Логика взаимодействия для AllUsersxaml.xaml
@@ -33,22 +35,23 @@ namespace comn
 
         private void BEdit_Click(object sender, RoutedEventArgs e)
         {
-            Maneger.MainFrame.Navigate(new AppUser(DGUsers.SelectedItem as User));
-            if (DGUsers.SelectedItem is User user)
-            {
-                App.DB.User.Remove(user);
-                try
+            
+            
+                if (DGUsers.SelectedItem is User user)
                 {
-                    App.DB.SaveChanges();
-                }
-                catch
-                {
-                    MessageBox.Show("Data not save");
-                }
-
+                    App.DB.User.Remove(user);
+                    try
+                    {
+                        App.DB.SaveChanges();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Data not save");
+                    }
+                Maneger.MainFrame.Navigate(new AppUser(DGUsers.SelectedItem as User));
                 Refresh();
-            }
-        
+                }
+                
         
         }
 

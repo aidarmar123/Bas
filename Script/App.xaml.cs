@@ -1,4 +1,5 @@
-﻿using System;
+﻿using comn.Models;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace comn
+namespace comn.Script
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

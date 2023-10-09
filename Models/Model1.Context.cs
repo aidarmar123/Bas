@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace comn
+namespace comn.Models
 {
     using System;
     using System.Data.Entity;

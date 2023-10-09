@@ -1,4 +1,6 @@
-﻿using System;
+﻿using comn.Models;
+using comn.Script;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -44,7 +46,7 @@ namespace comn
             }
             if (_currentUser.RoleId == -1)
             {
-                errors.Append("Not role " + _currentUser.RoleId + RoleInput.SelectedItem+ " "+ RoleInput.SelectedIndex);
+                errors.Append("Not role ");
             }
             if (errors.Length > 0)
             {

@@ -1,7 +1,7 @@
-﻿<Application x:Class="comn.App"
+﻿<Application x:Class="comn.Script.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:comn"
+             xmlns:local="clr-namespace:comn.Script"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
